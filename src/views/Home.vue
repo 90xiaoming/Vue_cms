@@ -24,50 +24,22 @@
                     </el-menu-item>
                     </el-submenu>
 
+                    
                      <el-submenu index="2">
-                    <template slot="title">
-                    <i class="el-icon-location"></i>
-                    <span>商品管理</span>
-                    </template>
-                    <el-menu-item index="/user">
-                        <i class="el-icon-menu"></i>
-                        <span slot="title">商品列表</span>
-                    </el-menu-item>
-                    </el-submenu>
-
-                     <el-submenu index="3">
                     <template slot="title">
                     <i class="el-icon-location"></i>
                     <span>权限管理</span>
                     </template>
-                    <el-menu-item index="/user">
+                    <el-menu-item index="/rights">
                         <i class="el-icon-menu"></i>
                         <span slot="title">权限列表</span>
                     </el-menu-item>
-                    </el-submenu>
-
-                    <el-submenu index="4">
-                    <template slot="title">
-                    <i class="el-icon-location"></i>
-                    <span>订单管理</span>
-                    </template>
-                    <el-menu-item index="/user">
+                     <el-menu-item index="/roles">
                         <i class="el-icon-menu"></i>
-                        <span slot="title">订单列表</span>
+                        <span slot="title">角色列表</span>
                     </el-menu-item>
                     </el-submenu>
-
-                    <el-submenu index="5">
-                    <template slot="title">
-                    <i class="el-icon-location"></i>
-                    <span>数据统计</span>
-                    </template>
-                    <el-menu-item index="/user">
-                        <i class="el-icon-menu"></i>
-                        <span slot="title">数据列表</span>
-                    </el-menu-item>
-                    </el-submenu>
-            </el-menu>
+                </el-menu>
             
             
         </el-aside>

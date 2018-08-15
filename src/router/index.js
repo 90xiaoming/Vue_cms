@@ -5,7 +5,8 @@ import Home from '@/views/Home'
 import Welcome from '@/views/welcome/Welcome'
 import User from '@/views/user/User'
 import Rights from '@/views/right/Rights'
-Vue.use(Router)
+import Roles from '@/views/right/Roles'
+Vue.use(Router) 
 
 export default new Router({
   routes: [
@@ -32,11 +33,16 @@ export default new Router({
           path:'User',
           component:User
         },
-        // {
-        //   name:'Rights',
-        //   path:'rights',
-        //   component:'Rights'
-        // }
+       {
+        name:'Rights',
+        path:'rights',
+        component:Rights,
+       },
+       {
+        name:'Roles',
+        path:'roles',
+        component:Roles,
+       },
       ]
     }
   ]
