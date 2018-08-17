@@ -29,8 +29,8 @@ export default new Router({
           component:Welcome
         },
         {
-          name:'User',
-          path:'User',
+          name:'Users',
+          path:'Users',
           component:User
         },
        {

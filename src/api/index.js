@@ -51,3 +51,19 @@ export const getRoleList=params=>{
 export const grantUserRole=params=>{
     return axios.put(`users/${params.id}/role`,{id:params.id,rid:params.rid}).then(res=>res.data)
 }
+//获取权限列表数据
+export const getRightList=params=>{
+    return axios.get(`rights/${params.type}`).then(res=>res.data)
+}
+//删除角色指定权限
+export const deleteRolesRight=params=>{
+    return axios.delete(`roles/${params.roleId}/rights/${params.rightId}`).then(res=>res.data)
+}
+//角色权限
+export const grantRoleRight=(roleId,rids)=>{
+    return axios.post(`roles/${roleId}/rights`,rids).then(res=>res.data)
+}
+//左侧菜单权限
+export const getMenus=()=>{
+    return axios.get('menus').then(res=>res.data)
+}
